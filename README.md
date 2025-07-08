@@ -1,3 +1,7 @@
+## Resultados de Ejecución
+![Resultados de Ejecución](Captura.PNG)
+
+
 # Non-Linear Data Structures 
 
 ## Getting Started
