@@ -1,5 +1,7 @@
 package models;
 
+import java.util.Map;
+
 public class Empleado implements Comparable<Empleado> {
     private int id;
     private String name;
@@ -9,6 +11,10 @@ public class Empleado implements Comparable<Empleado> {
         this.id = id;
         this.name = name;
         this.position = position;
+    }
+
+    public Empleado(int id) {
+        this.id = id;
     }
 
     public int getId() {
@@ -23,14 +29,11 @@ public class Empleado implements Comparable<Empleado> {
         return position;
     }
 
-    
-
     @Override
     public int hashCode() {
         final int prime = 31;
         int result = 1;
         result = prime * result + id;
-        result = prime * result + ((name == null) ? 0 : name.hashCode());
         return result;
     }
 
@@ -45,11 +48,6 @@ public class Empleado implements Comparable<Empleado> {
         Empleado other = (Empleado) obj;
         if (id != other.id)
             return false;
-        if (name == null) {
-            if (other.name != null)
-                return false;
-        } else if (!name.equals(other.name))
-            return false;
         return true;
     }
 
@@ -60,11 +58,6 @@ public class Empleado implements Comparable<Empleado> {
 
     @Override
     public int compareTo(Empleado o) {
-        int nameComp = this.name.compareToIgnoreCase(o.name);
-        if(nameComp == 0) {
-            return Integer.compare(this.id, o.id);
-        }
-
-        return nameComp;
+        return Integer.compare(this.id, o.id);
     }
 }

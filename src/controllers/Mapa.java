@@ -18,13 +18,13 @@ public class Mapa {
         capitales.put("Colombia", "Bogotá");
         capitales.put("Perú", "Lima");
 
-        System.out.println("\n------Mapa de capitales:-------");
+        System.out.println("------Mapa de capitales:-------");
         for (String pais : capitales.keySet()) {
-            System.out.println("País: " + pais + ", Capital: " + capitales.get(pais));
+            System.out.println("País: " + pais + ", Capital: " + capitales.get(pais) + "\n");
         }
 
         String capital = capitales.get("Ecuador");
-        System.out.println("La capital de Ecuador es: " + capital);
+        System.out.println("\nLa capital de Ecuador es: " + capital + "\n");
 
         Map<Integer, Empleado> empleados = new HashMap<>();
         empleados.put(3, new Empleado(3, "Pedro", "Tester"));
@@ -34,6 +34,8 @@ public class Mapa {
         for (Map.Entry<Integer, Empleado> entry : empleados.entrySet()){
             System.out.println("Clave: " + entry.getKey() + ", Valor: " + entry.getValue());
         }
+
+        System.out.println("");
 
         Map<Empleado, Integer> empleadoDos = new HashMap<>();
         Empleado emp1 = new Empleado(1, "Ana", "Dev");
@@ -49,6 +51,8 @@ public class Mapa {
         for (Map.Entry<Empleado, Integer> entry : empleadoDos.entrySet()){
             System.out.println(entry.getKey() + "=>" + entry.getValue());
         }
+
+        System.out.println();
     }
 
     public void ejemploConLinkedHashMap() {
@@ -81,5 +85,7 @@ public class Mapa {
         for (Integer id : personas.descendingKeySet()) {
             System.out.println("ID: " + id + " - Nombre: " + personas.get(id));
         }
+
+        System.out.println("hOLA :D");
     }
 }
