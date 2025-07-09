@@ -1,6 +1,7 @@
 package controllers;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Ejercicios {
 
@@ -28,8 +29,18 @@ public class Ejercicios {
      * frecuencia.
      */
     public static boolean areAnagrams(String str1, String str2) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        if(str1.length() != str2.length()) {
+            return false;
+        }
 
+        Map<Character, Integer> freq1 = new HashMap<>();
+        Map<Character, Integer> freq2 = new HashMap<>();
+
+        // for(char c : str1.toCharArray()) {
+        //     freq1.put(c, freq1.getOrDefault((c, 0), +1 ))
+        // }
+
+        return true;
     }
 
     /*
