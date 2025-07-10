@@ -1,10 +1,21 @@
 # 🖥️ Resultados de Ejecución
 
+---
+
 ## **Estudiante:** Brandon Collaguazo
 
+---
+
+### 🗂️🔑 Mapas
 ![Resultados de Ejecución](Captura.PNG)
 
+### 🗂️👨‍💼 Mapas (DAO y Controller)
 ![Resultados de Ejecución](EmpleadoMap.PNG)
+
+### 🧠💻 Ejercicios
+![Resultados de Ejecución](Ejercicios.PNG)
+
+---
 
 # Non-Linear Data Structures 
 
