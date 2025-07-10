@@ -1,10 +1,6 @@
 # 🖥️ Resultados de Ejecución
 
----
-
 ## **Estudiante:** Brandon Collaguazo
-
----
 
 ### 🗂️🔑 Mapas
 ![Resultados de Ejecución](Captura.PNG)
